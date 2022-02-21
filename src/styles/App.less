@@ -1,0 +1,298 @@
+@import '../../node_modules/antd/dist/antd.css';
+@import './OrgChart.less';
+@import './OrgBoard.less';
+@import './DnDCards.less';
+@import './Stats.less';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+
+body {
+    background-color: #484848;
+    min-height: 100vh;
+    margin: auto;
+}
+
+b {
+    font-family: 'Montserrat', sans-serif;
+}
+
+// .ant-progress-bg {
+//     background-color: #7B98A1;
+//   }
+
+// .ant-checkbox-checked .ant-checkbox-inner {
+//     background-color: #7B98A1;
+//     border-color: #7B98A1;
+// }
+
+// .ant-radio-checked .ant-radio-inner{
+//     border-color: #7B98A1 !important ;
+//   }
+  
+//   .ant-radio-checked .ant-radio-inner:after{
+//     background-color: #7B98A1;
+//   }
+
+//   .btnPrimary {
+//       background-color: #7B98A1;
+//       border: 1px solid #7B98A1;
+//       border-radius: 5px;
+//   }
+
+//   .btnPrimary:hover {
+//       color: black;
+//       border: 1px solid rgb(151, 185, 196);;
+//       background-color: rgb(151, 185, 196);
+//       border-radius: 5px;
+//   }
+
+.recharts-legend-icon {
+    display: none;
+}
+
+  .btnSecondary {
+      background-color: rgb(237, 183, 67);
+      border: 1px solid black;
+      border-radius: 5px;
+  }
+
+  .btnSecondary:hover {
+      color: black;
+      border: 1px solid black;
+      background-color: rgb(240, 196, 99);
+      border-radius: 5px;
+  }
+  .btnSecondary:focus {
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(240, 196, 99);
+    border-radius: 5px;
+}
+
+#components-grid-demo-flex-align [class~='ant-row'] {
+    background: rgba(128, 128, 128, 0.08);
+  }
+
+  .quotaGraph {
+      //border: 0.1px solid lightgray;
+      padding: 1em;
+      margin: 1em auto;
+      //border-radius: 10px;
+      //background: #e4e4e4;
+      //box-shadow:  15px 15px 25px #ebe1e1,
+  }
+  .quotaStatOption {
+      text-align: center;
+  }
+  .table-striped-rows {
+      background-color: red;
+  }
+  .table-striped-rows tr:nth-child(2n) td {
+      background-color: #fbfbfb;
+  }
+  .table-striped-rows thead {
+      background-color: #f1f1f1;
+  }
+  .react-flow__connection-path {
+      stroke: red;
+  }
+.formStyle {
+    padding: 3em;
+    width: 70%;
+    margin: auto;
+    background-color: #dfdfdf;
+    color: #212121;
+    box-shadow: 4px 4px 12px 2px #a4a4a4;
+    border-radius: 5px;
+}
+
+.hattingSequence {
+    color: #000;
+    background-color: #dfdfdf;
+    border: 1px solid black;
+    padding: 2em;
+    //box-shadow: 0px 0px 15px 0px #888888;
+    border-radius: 5px;
+    margin-bottom: 2em;
+    li {
+        height: 3em;
+        padding: 10px;
+        list-style-type: none;
+        border-radius: 15px;
+    }
+    li:nth-child(even) {
+        background-color: #f1f1f1;
+    }
+}
+.hatPackSequence{
+    color: #000;
+    border: 1px solid gray;
+    background-color: #dfdfdf;
+    padding: 2em;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    li {
+        height: 3em;
+        padding: 10px;
+        list-style-type: none;
+        border-radius: 15px;
+    }
+    li:nth-child(even) {
+        background-color: #f1f1f1;
+    }
+}
+
+.footer {
+    //position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+ }
+
+.note {
+    color: #000;
+    background-color: #dfdfdf;
+    border: 1px solid black;
+    padding: 2em;
+    box-shadow: 0px 0px 15px 0px #888888;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+.quotaGraphSelectContainer > div {
+    display: inline-block;
+    display: -moz-inline-box;
+    *display: inline; /* For IE7 */
+    zoom: 1; /* Trigger hasLayout */
+    width: 33%;
+    text-align: center;
+}
+
+
+.customNode {
+    width: 200px;
+    text-align: center;
+    background-color: #f1f1f1;
+    box-shadow: 0px 0px 15px 0px #3d3939;
+    border-radius: 5px;
+}
+
+.otherFlowChartNode {
+    width: 200px;
+    text-align: center;
+    background-color: #dddddd;
+    box-shadow: 0px 0px 15px 0px #888888;
+    border-radius: 5px;
+}
+
+.nodeHandle{
+   background: red;
+}
+
+.statPannel {
+    padding-right: 2em;
+}
+
+.statSubmissionRow {
+    border: 1px solid black;
+    //position: fixed; 
+    margin: 2em;
+    background-color: #dfdfdf;
+    box-shadow: 0px 0px 15px 0px #888888;
+    border-radius: 5px;
+    overflow-y: scroll; 
+    max-height: 800px;
+}
+.flowChartBox {
+    height: 800px;
+    background-color: #dfdfdf80;
+    color: #212121;
+    box-shadow: 4px 4px 12px 2px #a4a4a4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+// ------- HOME PAGE --------
+
+.hattingHomePage {
+    border: 1px solid black;
+    //position: fixed; 
+    margin: 2em;
+    background-color: #b8b8b8;
+    box-shadow: 0px 0px 15px 0px #888888;
+    border-radius: 5px;
+    overflow-y: scroll; 
+    max-height: 800px;
+}
+.statsHomePage {
+    border: 1px solid black;
+    //position: fixed; 
+    margin: 2em;
+    background-color: #b8b8b8;
+    box-shadow: 0px 0px 15px 0px #888888;
+    border-radius: 5px;
+    // overflow-y: scroll; 
+    max-height: 800px;
+}
+.statsHomePageScroll {
+    //border: 1px solid black;
+    //position: fixed; 
+
+    overflow-y: scroll; 
+    max-height: 300px;
+}
+.notesHomePage {
+    border: 1px solid black;
+    //position: fixed; 
+    margin: 2em;
+    background-color: #b8b8b8;
+    box-shadow: 0px 0px 15px 0px #888888;
+    border-radius: 5px;
+    overflow-y: scroll; 
+    max-height: 300px;
+}
+
+// -------
+
+
+  
+
+.linkText {
+    cursor: pointer;
+    color: rgba(0, 0, 0, .65);
+}
+.linkText:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.linkTextHeader{
+    color: #dddddd;
+}
+.linkTextHeader:hover {
+    color: #dddddd;
+    text-decoration: underline;
+}
+
+.deleteText {
+    cursor: pointer;
+    color: rgba(216, 77, 77, 0.65);
+}
+.deleteText:hover {
+    color: rgb(216, 77, 77);
+}
+
+
+.ant-btn-primary {
+    background-color: #7B98A1;
+}
+
+
+.referenceTable {
+    max-height: 46em;
+    overflow-y: scroll;
+}
+
